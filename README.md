@@ -34,6 +34,6 @@ void merge_sort(int q[], int l, int r){
     else tmp[k ++ ] = q[ j ++ ];
    while (i <= mid) tmp[k ++ ] = q[i ++ ];
    while (j <= r) tmp[k ++ ] = q[j ++];
-   for (int i = l, j = 0; i <= r && j <= k; i++ , j++) q[i ++ ] = tmp[j ++ ];
+   for (int i = l, j = 0; i <= r && j <= k; i++ , j++) q[i] = tmp[j];
 }
 ```
